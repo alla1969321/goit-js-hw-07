@@ -25,14 +25,33 @@ const images = [
   }
 ];
 
-const gallery = document.querySelector('.gallery');
+const makeGalleryCard = (imgInfo) => {
+  const liElement = document.createElement("li");
+  liElement.classList.add("gallery-item");
+  liElement.style.width = "calc((100% - 48px) / 3)"
 
-const galleryItems = images.map(({ url, alt }) => {
-  return `
-    <li class='gallery-item'>
-      <img src="${url}" alt="${alt}" class='gallery-img'>
-    </li>
-  `;
-}).join('');
+  const cardImg = document.createElement("img");
+  cardImg.src = imgInfo.url;
+  cardImg.alt = imgInfo.alt;
+  cardImg.width = "360";
+  cardImg.height = "300";
+  
 
-gallery.insertAdjacentHTML('beforeend', galleryItems);
+  liElement.append(cardImg);
+  return liElement;
+}
+
+const gelleryCardArr = images.map(imgInfo => makeGalleryCard(imgInfo));
+
+const listOfCard = document.querySelector(".gallery");
+listOfCard.append(...gelleryCardArr);
+
+listOfCard.style.listStyleType = "none";
+listOfCard.style.display = "flex";
+listOfCard.style.flexWrap = "wrap";
+listOfCard.style.columnGap = "24px";
+listOfCard.style.rowGap = "48px";
+listOfCard.style.margin = "100px auto 100px auto";
+listOfCard.style.padding = "0";
+listOfCard.style.justifyContent = "center";
+listOfCard.style.maxWidth = "1128px";
