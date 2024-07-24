@@ -1,8 +1,7 @@
 const images = [
   {
-    url: "https://s3-alpha-sig.figma.com/img/5dde/4622/0907ed8fd691000bbe73fee51101d8ee?Expires=1722816000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Qu0JInCxP0t10eWIAHoHbGueiqdnktfB5EPA98zaAimE1T0ty~ggbdcuCR3yhv7TmjvCfv6TWkdqY5DsvWRs1JaNeG9~qgoUh2ZM27XEIMi89aLmaSSQr81YRRl7fx~4KsscrSkI2XE0Qk~rBdRMyL~dOFbdTmYXNdXz2i6bCuv9UoAR-uFeJXuDhRUj-U5JSK7mrhuVMwFp3Hf7cQ6857oUPGnEFZ86oE9KO8ufGztZZoN-Kr-ryjvRXeQf7ppFCMWP-2GRKx5oHYXzEAyn1wMDVjOKpENZniynzdaXdqLIdy6pCOzfWJM0c50bl3BRtwIqCvC6LpUBc1XmLgnfzQ__",
+    url: "https://images.pexels.com/photos/140134/pexels-photo-140134.jpeg?dpr=2&h=750&w=1260",
     alt: "White and Black Long Fur Cat",
-  },
   {
     url: "https://images.pexels.com/photos/213399/pexels-photo-213399.jpeg?dpr=2&h=750&w=1260",
     alt: "Orange and White Koi Fish Near Yellow Koi Fish",
